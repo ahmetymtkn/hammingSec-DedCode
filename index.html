@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamming SEC-DED Code Simulator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+    .output {
+      background: #e6f2ff; 
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hamming SEC-DED Simülatörü</h1>
+
+    <p>Veri (8, 16 veya 32 bit):</p>
+    <input type="text" id="dataInput" placeholder="Örn: 10101010" />
+    <button onclick="hammingcode()">Hamming Kodu Oluştur</button>
+
+    <div id="generatedCode" class="output"></div>
+
+    <button onclick="addError()">Rastgele Tek Hata Ekle</button>
+    <button onclick="addDoubleError()">Rastgele Çift Hata Ekle</button>
+    <div id="errorCode" class="output"></div>
+
+    <button onclick="correctError()">Hatayı Tespit Et & Düzelt</button>
+    <div id="correctionResult" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
