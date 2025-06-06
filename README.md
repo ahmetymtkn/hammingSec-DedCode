@@ -34,13 +34,12 @@ Bu proje, veri iletiminde ve depolamada hata tespiti ve düzeltmesi için kullan
 
 ### Gereksinimler
 - Modern web tarayıcısı (Chrome, Firefox, Safari, Edge)
-- HTTP server (isteğe bağlı, local file çalıştırma için)
-
+  
 ### Kurulum Adımları
 
 1. **Projeyi İndirin**
    ```bash
-   git clone https://github.com/username/hamming-sec-ded-simulator.git
+   git clone https://github.com/ahmetymtkn/hammingSec-DedCode.git
    cd hamming-sec-ded-simulator
    ```
 
@@ -59,16 +58,6 @@ Bu proje, veri iletiminde ve depolamada hata tespiti ve düzeltmesi için kullan
    # index.html dosyasını tarayıcıya sürükleyin
    ```
    
-   **Seçenek B**: HTTP server ile çalıştırın
-   ```bash
-   # Python 3 ile
-   python -m http.server 8000
-   
-   # Node.js ile
-   npx http-server
-   
-   # Tarayıcıda http://localhost:8000 adresini açın
-   ```
 
 ## 📖 Kullanım
 
@@ -90,18 +79,6 @@ Bu proje, veri iletiminde ve depolamada hata tespiti ve düzeltmesi için kullan
    - "Hatayı Tespit Et & Düzelt" butonuna tıklayın
    - Sistem hatayı analiz eder ve sonucu gösterir
 
-### Örnek Kullanım
-
-```
-Giriş: 10101010
-↓
-Hamming Kodu: 001110101010100
-↓
-Tek Hata Eklendi [bit 5]: 001100101010100
-↓
-Hata Tespit Edildi: bit 5
-Düzeltildikten sonra: 001110101010100
-```
 
 ## 🔬 Algoritma Detayları
 
